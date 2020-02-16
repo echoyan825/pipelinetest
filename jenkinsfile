@@ -1,11 +1,14 @@
-node{
-    stage('setup'){
-        echo 'start test'
-    }
-    stage('test'){
-        echo 'testing....'
-    }
-    stage('teardown'){
-        echo 'teardown'
+pipeline{
+    agent any
+    stages{
+        stage('setup'){
+            echo 'start test'
+        }
+        stage('test'){
+            echo 'testing....'
+        }
+        stage('teardown'){
+            echo 'teardown'
+        }
     }
 }
