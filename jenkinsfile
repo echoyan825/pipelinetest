@@ -2,17 +2,17 @@ pipeline{
     agent any
     stages{
         stage('setup'){
-            step{
+            steps{
             echo 'start test'
             }
         }
         stage('test'){
-            step{
+            steps{
             echo 'testing....'
             }
         }
         stage('teardown'){
-            step{
+            steps{
             echo 'teardown'
             }
         }
